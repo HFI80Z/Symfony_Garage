@@ -44,8 +44,8 @@
 
 # Gestion des branches
 
-- git clone https://github.com/Trinyz7/projet_garage
-- cd projet_garage
+- git clone https://github.com/HFI80Z/Symfony_Garage.git
+- cd projet_garage_symfony
 - Installez les dépendances PHP via Composer :
 - composer install
 - Configurez la base de données dans le fichier .env :
