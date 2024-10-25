@@ -1,82 +1,61 @@
-# projet_garage
- Collaborateurs
-- [amine](https://github.com/) 
-- [Johan Gourmand](https://github.com/joepok77) 
-- [Anthony Nguyen](https://github.com/Trinyz7) 
-- [Esteban Lory](https://github.com/) 
-- [Shaman Viellet](https://github.com/ShamanK93) 
+# Projet Garage
 
-# garage-V.Parrot
-Vincent Parrot,travail dans la réparation automobile et a ouvert son propre garage à Toulouse en 2021.
+- Collaborateurs
 
-Depuis 3 ans, il propose une large gamme de services: réparation de la carrosserie et de la mécanique des voitures ainsi que leur entretien régulier pour garantir leur performance et leur sécurité. De plus, le Garage V. Parrot met en vente des véhicules d'occasion afin d'accroître son chiffre d'affaires.
-Vincent Parrot considère son atelier comme un véritable lieu de confiance pour ses clients et leurs voitures doivent, selon lui, à tout prix être entre de bonnes mains.
+   - [Esteban Lory](https://github.com/HFI80Z) 
+   - [Anthony Nguyen](https://github.com/Trinyz7) 
+   - [Johan Gourmand](https://github.com/joepok77) 
+   - [Shaman Viellet](https://github.com/ShamanK93)
+   - [Amine Terraha](https://github.com/Amine9200) 
 
-Bien qu'il fournisse grâce à ses employés un service de qualité et personnalisé à chaque client, Vincent Parrot reconnaît qu'il doit être visible sur internet s'il veut se faire définitivement une place parmi la concurrence.
+# Garage_V.Parrot
+- Vincent Parrot, spécialiste de la réparation automobile, a ouvert son propre garage à Toulouse en 2021. Depuis, il propose une vaste gamme de services, allant de la réparation de la carrosserie et de la mécanique des véhicules à leur entretien régulier, afin de garantir leur performance et leur sécurité. Le Garage V. Parrot offre également la vente de voitures d'occasion, une activité qui lui permet de diversifier ses sources de revenus.
+
+- Pour Vincent, son atelier est bien plus qu'un simple lieu de travail : c’est un espace de confiance où chaque véhicule doit être traité avec le plus grand soin. Bien que son équipe fournisse un service personnalisé et de qualité à chaque client, Vincent est conscient de l'importance de renforcer sa présence en ligne pour se démarquer de la concurrence et asseoir sa notoriété.
+
+# Backend :
+
+- Langage : PHP 8.1
+- Framework : Symfony CLI 7
+- Gestionnaire de dépendances : Composer
+- Interface d'administration : EasyAdmin 4
+- Base de données : MySQL
+  
+# Frontend :
+
+- Langages : HTML5, CSS3, JavaScript
+- Framework CSS : Bootstrap
 
 # Fonctionnalités principales
-- Utilisateur Administrateur :
-Gestion des services proposés par le garage.
-Gestion des horaires d'ouverture.
-Gestion des comptes des employés.
- - Utilisateur Employé :
-Ajout de véhicules d'occasion (avec photos, description, informations techniques).
-Modération des témoignages clients.
-- Utilisateur Visiteur :
-Consultation des services et horaires d'ouverture.
-Consultation des véhicules d'occasion avec détails.
-Ajout d'un témoignage (nom, commentaire, note).
 
-Gestion des voitures d'occasion : ajout, affichage et suppression de véhicules d'occasion.
-Affichage des véhicules : chaque voiture est affichée avec ses caractéristiques (marque, modèle, prix, kilométrage, etc.) et ses images dans un carrousel.
-Page d'administration : accès restreint pour ajouter et supprimer des véhicules
-Présenter les services : l'administrateur a la posibilité de modifier les informations directements à partir de son espace admin.
-Définir les horaires d'ouvertures : l'administrateur a la posibilité de préciser quand le garage est ouvert, à partir de son espace.
-Création de compte : possibilité de créer un compte employé depuis la page admin et lui attribuer un rôle.
-# Technologie utilisé
-- Backend :
-Langage : PHP 8.1
-Framework : Symfony CLI
-Composer
-EasyAdmin4
-MySQL
-- Frontend :
-Langages : HTML5, CSS3, Bootstrap, JavaScript
+- Utilisateur Administrateur :
+
+   - Gestion des services proposés par le garage.
+   - Configuration des horaires d'ouverture.
+  
+- Utilisateur Employé :
+
+   - Ajout de véhicules d'occasion, incluant photos, descriptions et informations techniques.
+  
+- Utilisateur Visiteur :
+
+   - Consultation des services disponibles et des horaires d'ouverture.
+   - Visualisation des véhicules d'occasion avec tous les détails associés.
 
 # Gestion des branches
-git clone https://github.com/jordyvuong/projet-garage.git
-cd projet-garage
 
-Installez les dépendances PHP via Composer :
-composer install
-Configurez la base de données dans le fichier .env :
-
-DATABASE_URL="mysql://root:@127.0.0.1:8000/garage_db"
-Créez la base de données et exécutez les migrations :
-
-php bin/console doctrine:database:create
-php bin/console doctrine:migrations:migrate
-Démarrer le serveur symfony :
-
-symfony server:start -d
+- git clone https://github.com/HFI80Z/Symfony_Garage.git
+- cd projet_garage_symfony
+- Installez les dépendances PHP via Composer :
+- composer install
+- Configurez la base de données dans le fichier .env :
+- DATABASE_URL="mysql://root@127.0.0.1:3306/projet_garage_symfony?serverVersion=8.0.32&charset=utf8mb4"
+- Créez la base de données et exécutez les migrations :
+- php bin/console doctrine:database:create
+- php bin/console doctrine:migrations:migrate
+- Démarrer le serveur symfony :
+- symfony server:start -d
+  
 # Annexes
-Lien du canva :
 
-# Structure du site web
-Sur la page d'accueil de notre site de e-commerce, nous avons une barre de navigation en haut de la page. Cette barre de navigation comporte des catégories importantes telles que "Tendance", "Lifestyle", "Découvrir", etc. Elle contient également deux boutons pour permettre aux utilisateurs de se connecter.
-
-Nous avons une "Hero Banner", qui affiche la devise de notre site. En plus de la devise, elle présente des carrousels mettant en avant les sneakers tendances, offrant ainsi un aperçu visuel des produits disponibles.
-
-En descendant sur la page, les utilisateurs trouveront un catalogue d'articles. Ce catalogue présente une sélection de produits que les utilisateurs peuvent parcourir. Ils ont également la possibilité d'ajouter des articles à leur panier directement depuis cette section, ce qui simplifie le processus d'achat.
-
-Enfin, en bas de la page, nous avons un footer. Qui contient des informations sur notre entreprise, donnant aux visiteurs un aperçu de qui nous sommes et de ce que nous proposons. Il inclut également un lien intitulé "Rejoignez Sneakpeak". Ce lien redirige les utilisateurs vers une page de contact où ils peuvent entrer en contact avec nous pour toute question.
-
-
-# Documentation utilisateur fonctionnement du site
-Navigation Intuitive : La navigation sur notre site est simple et intuitive.
-
-Design attirant : On a mis en place un design attirant et esthétique pour créer une première impression positive et qui encourage les visiteurs à explorer davantage notre site.
-
-Contenu Pertinent : Le contenu de notre site, y compris le catalogue de produits sont clair et pertinent.
-
-Facilité d'Achat : Les visiteurs peuvent ajouter des articles à leur panier, passer à la caisse et finaliser leur commande en quelques étapes seulement.
+   - Lien du canva : https://www.canva.com/design/DAGT8zJz1ps/FdZTpNfvQeRfqYrcjqaJTQ/view?utm_content=DAGT8zJz1ps&utm_campaign=designshare&utm_medium=link&utm_source=editor
